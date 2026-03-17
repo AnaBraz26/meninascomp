@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meninas.comp</title> 
+    <link rel="icon" type="image/png" href="assets/Mprincipal.png"/>   
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">  
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="bg-gradient-to-b bg-[#FFE7E8] text-gray-900 min-h-screen flex flex-col antialiased">
+    
+    <!------------------------------------------ Barra ---------------------------------------------------------------------------------->
+
+    <nav class="fixed top-0 left-0 w-full z-50 bg-[#9C1B2E] bg-opacity-90 text-white py-4 px-6 flex justify-between items-center">
+        <div class="text-xl font-bold">
+            <img src="assets/Mprincipal.png"
+                alt="Meninas.comp"
+                class=" w-12 transition-transform duration-500 hover:scale-110">
+        
+        </div>
+        <div class="menu-toggle md:hidden text-white text-2xl mr-4">
+            ☰
+        </div>
+        <ul class="hidden md:flex flex-col md:flex-row gap-4 text-white text-xl font-medium menu-list">
+            <li><a href="index.html" class="hover:text-purple-300 transition font-bold">Home</a></li>  
+            <li><a href="index.html" class="hover:text-purple-300 transition font-bold">História</a></li>  
+            <li><a href="areas.html" class="hover:text-purple-300 transition font-bold">Áreas de Atuação</a></li>
+            <li><a href="escolas.html" class="hover:text-purple-300 transition font-bold">Escolas</a></li>            
+            <li><a href="eventos.html" class="hover:text-purple-300 transition font-bold">Eventos</a></li>            
+            <li><a href="publicacao.html" class="hover:text-purple-300 transition font-bold">Publicação</a></li>  
+            <li><a href="mascotes.html" class="hover:text-purple-300 transition font-bold">Mascotes</a></li>  
+            <li><a href="contato.html" class="hover:text-purple-300 transition font-bold">Contato</a></li> 
+        </ul>          
+    </nav>
+
+    <!------------------------------------------ Banner ---------------------------------------------------------------------------------->
+
+    <section id="index" class="bg-gradient-to-b from-[#F59BAD] to-[#FFE7E8] flex items-start pt-20 justify-center">
+        <img src="assets/logo.png" alt="Logo Meninas.comp"
+            class="w-50 :w-1/2 transition-transform duration-500 hover:scale-110">
+    </section>
+
+    <!------------------------------------------ Sobre ---------------------------------------------------------------------------------->
+
+    <section id="sobre" class="relative bg-cover bg-center mt-24 md:px-20 ">
+        <div class="container mx-auto grid md:grid-cols-1 items-center">  
+            <h2 style="color: #9C1B2E" class="text-4xl text-center md:text-5xl md:text-left font-semibold text-[#673FBC]">
+                <strong>Sobre o projeto</strong>
+            </h2>
+            <p class="text-xl md:text-2xl text-justify mt-6">
+                O Meninas.comp é um projeto que fomenta a inclusão de meninas de escolas públicas do Distrito Federal por meio de iniciativas que estimulam esse público a ingressar em cursos ocupados majoritariamente por homens. O projeto foi idealizado por professoras do Departamento de Ciência da Computação da Universidade de Brasília em 2010.<br>
+                A principal atividade proposta é uma oficina motivacional a ser oferecida às meninas estudantes do ensino médio, tendo como objetivo divulgar as possibilidades de trabalho na área de Computação.<br>
+                Mesmo sem conhecimento prévio de técnicas de programação, mas com o direcionamento dado por monitoras responsáveis, as meninas terão a oportunidade de experimentar atividades que sejam inerentes à atuação profissional.      
+            </p>        
+        </div>
+    </section>
+
+    <!------------------------------------------ Ame Bit Byte ---------------------------------------------------------------------------------->
+
+        <section id="sobre" class="relative bg-cover bg-center mt-24 md:px-20">
+            <div class="container mx-auto grid md:grid-cols-1 items-center">  
+                <div class="container grid md:grid-cols-2 items-center ">          
+                    <div>
+                        <h2 style="color: #9C1B2E" class="text-4xl text-center md:text-left md:text-5xl font-semibold text-[#673FBC]">
+                            <strong>Ame Bit Byte</strong>
+                        </h2>  
+        
+                        <p class="text-xl md:text-2xl text-justify mt-6">
+                            A Ame Bit Byte recebeu esse nome em homenagem às incríveis professoras 
+                            Aleteia, Maristela e Maria Emília, da Universidade de Brasília. <br>
+                            Ela representa o projeto de extensão "Meninas.comp - computação também é coisa de Menina", 
+                            apoiado pela FAP-DF e promovido pelas professoras que inspiram meu nome.
+                        </p>
+
+                        <div class="flex justify-center mt-10 mb-5">
+                            <button class="bg-[#9C1B2E] hover:bg-[#e79aa3] text-xl text-white font-bold px-10 py-6 md:px-12 md:py-8 rounded-lg transition">
+                                Conheça mais sobre as mascotes
+                            </button>
+                        </div>  
+                    </div>
+
+                    <div class="flex justify-center">
+                        <img src="assets/AME_V1.png" alt="Ame Bit Byte" class="w-72 md:w-[500px] lg:w-[400px]">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    <!------------------------------------------ Fundadoras ---------------------------------------------------------------------------------->
+
+    <section id="Fundadoras" class="relative bg-cover bg-center mt-24 md:px-20 ">
+        <div class="container mx-auto grid md:grid-cols-1 items-center">  
+            <h2 style="color: #9C1B2E" class="text-4xl text-center md:text-left md:text-5xl font-semibold text-[#673FBC]">
+                <strong>Fundadoras</strong>
+            </h2>
+            <p class="text-xl md:text-2xl text-justify mt-6">
+                O Meninas.comp é um projeto que fomenta a inclusão de meninas de escolas públicas do Distrito Federal por meio de iniciativas que estimulam esse público a ingressar em cursos ocupados majoritariamente por homens. O projeto foi idealizado por professoras do Departamento de Ciência da Computação da Universidade de Brasília em 2010.<br>
+                A principal atividade proposta é uma oficina motivacional a ser oferecida às meninas estudantes do ensino médio, tendo como objetivo divulgar as possibilidades de trabalho na área de Computação.<br>
+                Mesmo sem conhecimento prévio de técnicas de programação, mas com o direcionamento dado por monitoras responsáveis, as meninas terão a oportunidade de experimentar atividades que sejam inerentes à atuação profissional.      
+            </p>        
+        </div>
+
+        <div class="flex justify-center gap-16 mt-10 flex-wrap">
+
+            <!-- Aleteia -->
+            <a href="https://lattes.cnpq.br/1566076687226024"
+            class="flex flex-col items-center transition-transform hover:scale-105">
+                
+                <img src="assets/Professoras/Aleteia.png"
+                    alt="Aleteia"
+                    class="w-32 h-32 md:h-80 md:w-80 rounded-full object-cover shadow-md" />
+                
+                <span class="mt-3 text-xl font-medium text-[#9C1B2E]">
+                    <strong> Aleteia Araujo </strong> 
+                </span>
+            </a>
+
+            <!-- Maristela -->
+            <a href="https://lattes.cnpq.br/5724567591998546"
+            class="flex flex-col items-center transition-transform hover:scale-105">
+                
+                <img src="assets/Professoras/maristela.png"
+                    alt="Maristela"
+                    class="w-32 h-32 md:h-80 md:w-80 rounded-full object-cover shadow-md" />
+                
+                <span class="mt-3 text-xl font-medium text-[#9C1B2E]">
+                    <strong>Maristela Holanda</strong>
+                </span>
+            </a>
+
+            <!-- Maria Emília -->
+            <a href="https://lattes.cnpq.br/0216229039021964"
+            class="flex flex-col items-center transition-transform hover:scale-105">
+                
+                <img src="assets/Professoras/Maria Emilia.png"
+                    alt="Maria Emilia"
+                    class="w-32 h-32 md:h-80 md:w-80 rounded-full object-cover shadow-md" />
+                
+                <span class="mt-3 text-xl font-medium text-[#9C1B2E]">
+                    <strong>Maria Emília Walter</strong>
+                </span>
+            </a>
+
+        </div>
+    </section>
+
+    <!---------------- Impactos --------------------->
+<section id="impactos" class="bg-[#FFE7E8] py-16 px-6 mt-10 md:px-20">
+
+        <h2 style="color: #9C1B2E" class="text-4xl mb-10 text-center md:text-5xl font-semibold text-[#673FBC]">
+            <strong>Impactos do Projeto</strong>
+        </h2>
+
+        <!-- CARROSSEL -->
+        <div class="relative max-w-5xl mx-auto">
+
+            <!-- CONTEÚDO -->
+            <div id="carousel" class="flex items-center gap-10 bg-white p-10 rounded-xl shadow-lg max-w-6xl mx-auto">
+
+                <!-- IMAGEM -->
+                <img id="img" src="assets/Depoimentos/jovem4.png"
+                    class="w-48 h-48 rounded-full object-cover flex-shrink-0">
+
+                <!-- TEXTO -->
+                <p id="text" class="text-gray-700 text-xl leading-relaxed">          
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tincidunt non lacus vel porttitor. Nulla sagittis, tortor et hendrerit scelerisque, lorem magna auctor sem, eu posuere diam lectus eu est. Donec hendrerit justo et purus volutpat, hendrerit cursus urna posuere. Ut quam ante, malesuada sit amet ultricies sit amet, fermentum eget sem. Nullam vehicula consequat arcu, at tincidunt sem faucibus at. Mauris purus odio, euismod sit amet eleifend imperdiet, imperdiet quis mi. Vivamus id odio congue, ornare orci at, consequat nibh. Vestibulum sed magna massa. Morbi eu condimentum neque, non scelerisque est. Fusce pulvinar, mauris at porta interdum, justo elit sollicitudin nibh, venenatis imperdiet elit lacus at diam.                
+                </p>
+            </div>
+
+            <!-- BOTÃO ESQUERDA -->
+            <button onclick="prevSlide()"
+                class="absolute left-[-20px] top-1/2 -translate-y-1/2 bg-[#e79aa3] text-white w-10 h-10 rounded-full">
+                ❮
+            </button>
+
+            <!-- BOTÃO DIREITA -->
+            <button onclick="nextSlide()"
+                class="absolute right-[-20px] top-1/2 -translate-y-1/2 bg-[#e79aa3] text-white w-10 h-10 rounded-full">
+                ❯
+            </button>
+
+        </div>
+    </section>
+
+    <!------------------------------------------ Apoiadores ---------------------------------------------------------------------------------->
+
+    <section id="apoiadores" class="px-4 sm:px-6 lg:px-8">
+
+            <h2 style="color: #9C1B2E" class="mb-8 text-center text-4xl md:text-5xl font-semibold text-[#673FBC]">
+                <strong>Apoio</strong>
+            </h2>
+            
+            <!-- Primeira linha de apoio -->
+            <div class="grid grid-cols-7 place-items-center w-full">
+                <a href=""
+                class="flex justify-center items-center w-80 h-40 transition-transform hover:scale-105">
+                    <img src="assets/apoio/mulheres.png"
+                        alt="MUlheres do Brasil"
+                        class="max-w-full max-h-full object-contain" />
+                </a>
+
+                <a href="https://les.unb.br/"
+                class="flex justify-center items-center w-80 h-24 transition-transform hover:scale-105">
+                    <img src="assets/apoio/capes.png"
+                        alt="CAPES"
+                        class="max-w-full max-h-full object-contain" />
+                </a>
+
+                <a href="https://les.unb.br/"
+                class="flex justify-center items-center w-80 h-20 transition-transform hover:scale-105">
+                    <img src="assets/apoio/cnpq.png"
+                        alt="CNPQ"
+                        class="max-w-full max-h-full object-contain" />
+                </a>
+
+                <a href="https://les.unb.br/"
+                class="flex justify-center items-center w-80 h-36 transition-transform hover:scale-105">
+                    <img src="assets/apoio/fap.png"
+                        alt="FAPDF"
+                        class="max-w-full max-h-full object-contain" />
+                </a>
+
+                <a href="https://les.unb.br/"
+                class="flex justify-center items-center w-80 h-32 transition-transform hover:scale-105">
+                    <img src="assets/apoio/sbc].png"
+                        alt="SBC"
+                        class="max-w-full max-h-full object-contain" />
+                </a>
+
+                <a href="https://les.unb.br/"
+                class="flex justify-center items-center w-48 h-20 transition-transform hover:scale-105">
+                    <img src="assets/apoio/digitais.png"
+                        alt="Meninas digitais"
+                        class="max-w-full max-h-full object-contain" />
+                </a>
+
+                <a href="https://les.unb.br/"
+                class="flex justify-center items-center w-80 h-32 transition-transform hover:scale-105">
+                    <img src="assets/apoio/unb-logo.webp"
+                        alt="UNB"
+                        class="max-w-full max-h-full object-contain" />
+                </a>
+            </div>
+        </div> 
+    </section>
+
+    <!------------------------------------------ Footer ---------------------------------------------------------------------------------->
+
+    <footer id="contato" class="bg-[#9C1B2E] text-gray-200 py-10 w-full h-full">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col items-center gap-6">
+
+            <!-- TEXTO -->
+            <div class="text-center">
+                <h1 class="text-xl font-semibold mb-2">
+                    Meninas.comp - Projeto meninas na Computação
+                </h1>
+                <h2 class="text-lg">
+                    Departamento de Ciência da Computação, Campus Universitário Darcy Ribeiro, Brasília-DF
+                </h2>
+            </div>
+
+            <!-- REDES SOCIAIS -->
+            <div class="flex gap-6">
+
+                <a href="https://www.facebook.com/meninas.comp" class="hover:scale-110 transition">
+                    <img src="assets/redes/face.png" alt="Facebook" class="w-16 h-16">
+                </a>
+
+                <a href="https://github.com/meninas-comp-UnB" class="hover:scale-110 transition">
+                    <img src="assets/redes/github.png" alt="Github" class="w-16 h-16">
+                </a>
+
+                <a href="https://www.instagram.com/meninas.comp/?hl=pt-br" class="hover:scale-110 transition">
+                    <img src="assets/redes/insta.png" alt="Instagram" class="w-16 h-16">
+                </a>
+
+                <a href="https://www.linkedin.com/company/meninas-comp/about/" class="hover:scale-110 transition">
+                    <img src="assets/redes/linkedin.png" alt="Linkedin" class="w-16 h-16">
+                </a>
+
+                <a href="https://www.tiktok.com/@meninas.comp?lang=pt_BR" class="hover:scale-110 transition">
+                    <img src="assets/redes/tktk.png" alt="Tiktok" class="w-16 h-16">
+                </a>
+
+                <a href="https://x.com/MeninasComp" class="hover:scale-110 transition">
+                    <img src="assets/redes/x.png" alt="X" class="w-16 h-16">
+                </a>
+
+                <a href="https://www.youtube.com/channel/UCmhONbQH7ScTbK1zyDaso1A" class="hover:scale-110 transition">
+                    <img src="assets/redes/youtube-play.png" alt="Youtube" class="w-16 h-16">
+                </a>
+            </div>
+
+        </div>
+
+        <hr class="border-white my-8 mx-auto max-w-7xl" />
+        
+        <div class="text-center text-sm text-white px-6">
+            2026. Meninas.comp ©. Design and developmente by
+            <a href="https://www.linkedin.com/in/anabraz26?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" class="underline hover:text-purple-500 font-semibold">Ana Caroline.</a>
+        </div>
+    </footer>
+        
+
+    <!-- Menu resposivo -->
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navList = document.querySelector('nav ul');
+
+        menuToggle.addEventListener('click', () => {
+            navList.classList.toggle('show');
+        });
+    </script>
+    </body>
+
+    <!-- Zoom do mapa principal -->
+    <script>
+        window.addEventListener('scroll', () => {
+            const floral = document.getElementById('continenteZoom');
+            const scrollTop = window.scrollY;
+            const zoom = Math.min(1 + scrollTop / 800, 1.2); 
+            floral.style.transform = `scale(${zoom})`;
+        });
+    </script>
+
+    <script>
+        const slides = [
+            {
+                img: "assets/Depoimentos/jovem1.png",
+                text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tincidunt non lacus vel porttitor. Nulla sagittis, tortor et hendrerit scelerisque, lorem magna auctor sem, eu posuere diam lectus eu est. Donec hendrerit justo et purus volutpat, hendrerit cursus urna posuere. Ut quam ante, malesuada sit amet ultricies sit amet, fermentum eget sem. Nullam vehicula consequat arcu, at tincidunt sem faucibus at. Mauris purus odio, euismod sit amet eleifend imperdiet, imperdiet quis mi. Vivamus id odio congue, ornare orci at, consequat nibh. Vestibulum sed magna massa. Morbi eu condimentum neque, non scelerisque est. Fusce pulvinar, mauris at porta interdum, justo elit sollicitudin nibh, venenatis imperdiet elit lacus at diam."
+            },
+            {
+                img: "assets/Depoimentos/jovem2.png",
+                text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tincidunt non lacus vel porttitor. Nulla sagittis, tortor et hendrerit scelerisque, lorem magna auctor sem, eu posuere diam lectus eu est. Donec hendrerit justo et purus volutpat, hendrerit cursus urna posuere. Ut quam ante, malesuada sit amet ultricies sit amet, fermentum eget sem. Nullam vehicula consequat arcu, at tincidunt sem faucibus at. Mauris purus odio, euismod sit amet eleifend imperdiet, imperdiet quis mi. Vivamus id odio congue, ornare orci at, consequat nibh. Vestibulum sed magna massa. Morbi eu condimentum neque, non scelerisque est. Fusce pulvinar, mauris at porta interdum, justo elit sollicitudin nibh, venenatis imperdiet elit lacus at diam."
+            },
+            {
+                img: "assets/Depoimentos/jovem3.png",
+                text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tincidunt non lacus vel porttitor. Nulla sagittis, tortor et hendrerit scelerisque, lorem magna auctor sem, eu posuere diam lectus eu est. Donec hendrerit justo et purus volutpat, hendrerit cursus urna posuere. Ut quam ante, malesuada sit amet ultricies sit amet, fermentum eget sem. Nullam vehicula consequat arcu, at tincidunt sem faucibus at. Mauris purus odio, euismod sit amet eleifend imperdiet, imperdiet quis mi. Vivamus id odio congue, ornare orci at, consequat nibh. Vestibulum sed magna massa. Morbi eu condimentum neque, non scelerisque est. Fusce pulvinar, mauris at porta interdum, justo elit sollicitudin nibh, venenatis imperdiet elit lacus at diam."
+            }
+        ];
+
+        let index = 0;
+
+        function showSlide(i) {
+            document.getElementById("img").src = slides[i].img;
+            document.getElementById("text").innerText = slides[i].text;
+        }
+
+        function nextSlide() {
+            index = (index + 1) % slides.length;
+            showSlide(index);
+        }
+
+        function prevSlide() {
+            index = (index - 1 + slides.length) % slides.length;
+            showSlide(index);
+        }
+
+        setInterval(() => {
+        nextSlide();
+        }, 4000); // troca a cada 4 segundos    
+    </script>
+
+</html>
