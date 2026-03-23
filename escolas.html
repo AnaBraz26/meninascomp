@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meninas.comp</title> 
+    <link rel="icon" type="image/png" href="assets/Mprincipal.png"/>   
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">  
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="bg-gradient-to-b bg-[#FFE7E8] flex flex-col antialiased overflow-x-hidden w-full">
+    
+    <!------------------------------------------ Barra ---------------------------------------------------------------------------------->
+
+    <nav class="fixed top-0 left-0 w-full z-50 bg-[#9C1B2E] bg-opacity-90 text-white py-4 px-6 flex justify-between items-center">
+        <div class="text-xl font-bold">
+            <a href="index.html">
+                <img src="assets/Mprincipal.png"
+                    alt="Meninas.comp"
+                    class="w-12 transition-transform duration-500 hover:scale-110">
+            </a>
+        </div>
+        <div class="menu-toggle md:hidden text-white text-2xl mr-4">
+            ☰
+        </div>
+        <ul class="hidden md:flex flex-col md:flex-row gap-4 text-white text-xl font-medium menu-list absolute md:static top-16 left-0 w-full md:w-auto bg-[#9C1B2E] md:bg-transparent p-6 md:p-0">
+            <li><a href="index.html" class="hover:text-purple-300 transition font-bold">Home</a></li>  
+            <li><a href="historia.html" class="hover:text-purple-300 transition font-bold">História</a></li>  
+            <li><a href="areas.html" class="hover:text-purple-300 transition font-bold">Áreas de Atuação</a></li>
+            <li><a href="escolas.html" class="hover:text-purple-300 transition font-bold">Escolas</a></li>            
+            <li><a href="eventos.html" class="hover:text-purple-300 transition font-bold">Eventos</a></li>            
+            <li><a href="publicacao.html" class="hover:text-purple-300 transition font-bold">Publicação</a></li>  
+            <!-- <li><a href="mascotes.html" class="hover:text-purple-300 transition font-bold">Mascotes</a></li>   -->
+            <li><a href="contato.html" class="hover:text-purple-300 transition font-bold">Contato</a></li> 
+        </ul>          
+    </nav>
+
+    <!------------------------------------------ Banner ---------------------------------------------------------------------------------->
+
+    <section id="index" class="bg-gradient-to-b from-[#F59BAD] to-[#FFE7E8] w-full">
+        
+        <img src="assets/Banners/escolas.png" 
+            alt="Banner"
+            class="w-full h-auto object-cover">
+
+    </section>
+    <!------------------------------------------ Sobre ---------------------------------------------------------------------------------->
+
+    <section id="escolas" class="relative bg-cover bg-center">
+        <div class="container mx-auto grid md:grid-cols-1 items-center">  
+            <h2 style="color: #9C1B2E" class="text-4xl text-center md:text-5xl font-semibold text-[#673FBC]">
+                <strong>Escolas Parceiras</strong>
+            </h2>
+            <p class="text-xl md:text-2xl text-center mt-6">
+                O projeto Meninas.comp já atuou em mais de 20 escolas, impactando diversas estudantes ao longo dos anos.<br> Confira abaixo as escolas parceiras atuais do projeto.
+            </p>        
+        </div>
+    </section>
+
+    <!------------------------------------------ Escolas ---------------------------------------------------------------------------------->
+    <section class="flex justify-center mt-10 mb-10">
+
+        <div class="flex gap-10">
+
+            <!-- COLUNA ESQUERDA -->
+            <div class="flex flex-col gap-3">
+
+                <div class="bg-[#e79aa3] text-black font-bold px-12 py-6 rounded-md text-xl text-center">
+                    CEM - PAULO FREIRE
+                </div>
+
+                <div class="bg-[#e79aa3] text-black font-bold px-12 py-6 rounded-md text-xl text-center">
+                    CEL - LAGO SUL
+                </div>
+
+                <div class="bg-[#e79aa3] text-black font-bold px-12 py-6 rounded-md text-xl text-center">
+                   410 NORTE - ASA NORTE  
+                </div>
+
+                <div class="bg-[#e79aa3] text-black font-bold px-12 py-6 rounded-md text-xl text-center">
+                    CEN - VALPARAÍSO
+                </div>
+
+                <div class="bg-[#e79aa3] text-black font-bold px-12 py-6 rounded-md text-xl text-center">
+                   ESCOLA MUNICIPAL PROFESSOR <br> FRANCISCO ALAN - PLANALTINA <br> DE GOIÁS
+                </div>
+            </div>
+
+            <!-- LINHA DIVISÓRIA -->
+            <div class="w-[2px] bg-[#9C1B2E] opacity-40"></div>
+
+            <!-- COLUNA DIREITA -->
+            <div class="flex flex-col gap-3">
+
+                <div class="bg-[#e79aa3] text-black font-bold px-12 py-6 rounded-md text-xl text-center">
+                    CED - VARGEM BONITA
+                </div>
+
+                <div class="bg-[#e79aa3] text-black font-bold px-12 py-6 rounded-md text-xl text-center">
+                    CED 310 - SANTA MARIA
+                </div>
+
+                <div class="bg-[#e79aa3] text-black font-bold px-12 py-6 rounded-md text-xl text-center">
+                    CED 209 - SANTA MARIA
+                </div>
+
+                <div class="bg-[#e79aa3] text-black font-bold px-12 py-6 rounded-md text-xl text-center">
+                    CEDLAN - LAGO NORTE
+                </div>
+
+                <div class="bg-[#e79aa3] text-black font-bold px-12 py-6 rounded-md text-xl text-center">
+                    COLÉGIO ESTADUAL PEDRO MOURÃO <br> CIDADE OCIDENTAL
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+    <!------------------------------------------ formulario ---------------------------------------------------------------------------------->
+
+    <section id="escolas" class="bg-[#FFE7E8] py-16 px-10 md:px-32">
+
+        <div class="max-w-4xl mx-auto text-center">
+
+            <!-- TÍTULO -->
+            <h2 style="color: #9C1B2E" class="text-4xl text-center md:text-5xl font-semibold text-[#673FBC]">
+                <strong>Seja uma escola parceira</strong>
+            </h2>
+
+            <!-- TEXTO -->
+            <p class="text-xl md:text-2xl text-center mt-6">
+                Gostaria de levar o projeto Meninas.comp para sua escola?<br>
+                Para participar, basta preencher o formulário clicando no botão abaixo.<br>
+                Nossa equipe entrará em contato com a sua instituição.
+            </p>              
+
+            <!-- BOTÃO -->
+            <a href="#"
+            class="inline-block mt-8 px-6 md:px-10 py-3 md:py-4 
+                  bg-[#9C1B2E] hover:bg-[#e79aa3] 
+                  text-white text-base md:text-lg font-semibold 
+                  rounded-md transition duration-300">
+                Preencher Formulário
+            </a>
+
+        </div>
+
+    </section>
+    <!------------------------------------------ Apoiadores ---------------------------------------------------------------------------------->
+
+    <section id="apoiadores" class="px-4 sm:px-6 lg:px-8">
+
+            <h2 style="color: #9C1B2E" class="mb-8 text-center text-4xl md:text-5xl font-semibold text-[#673FBC]">
+                <strong>Apoio</strong>
+            </h2>
+            
+            <!-- Primeira linha de apoio -->
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-7 gap-6 place-items-center w-full">
+                <a href=""
+                class="flex justify-center items-center w-80 h-40 transition-transform hover:scale-105">
+                    <img src="assets/apoio/mulheres.png"
+                        alt="MUlheres do Brasil"
+                        class="max-w-full max-h-full object-contain" />
+                </a>
+
+                <a href="https://les.unb.br/"
+                class="flex justify-center items-center w-80 h-24 transition-transform hover:scale-105">
+                    <img src="assets/apoio/capes.png"
+                        alt="CAPES"
+                        class="max-w-full max-h-full object-contain" />
+                </a>
+
+                <a href="https://les.unb.br/"
+                class="flex justify-center items-center w-80 h-20 transition-transform hover:scale-105">
+                    <img src="assets/apoio/cnpq.png"
+                        alt="CNPQ"
+                        class="max-w-full max-h-full object-contain" />
+                </a>
+
+                <a href="https://les.unb.br/"
+                class="flex justify-center items-center w-80 h-36 transition-transform hover:scale-105">
+                    <img src="assets/apoio/fap.png"
+                        alt="FAPDF"
+                        class="max-w-full max-h-full object-contain" />
+                </a>
+
+                <a href="https://les.unb.br/"
+                class="flex justify-center items-center w-80 h-32 transition-transform hover:scale-105">
+                    <img src="assets/apoio/sbc].png"
+                        alt="SBC"
+                        class="max-w-full max-h-full object-contain" />
+                </a>
+
+                <a href="https://les.unb.br/"
+                class="flex justify-center items-center w-48 h-20 transition-transform hover:scale-105">
+                    <img src="assets/apoio/digitais.png"
+                        alt="Meninas digitais"
+                        class="max-w-full max-h-full object-contain" />
+                </a>
+
+                <a href="https://les.unb.br/"
+                class="flex justify-center items-center w-80 h-32 transition-transform hover:scale-105">
+                    <img src="assets/apoio/unb-logo.webp"
+                        alt="UNB"
+                        class="max-w-full max-h-full object-contain" />
+                </a>
+            </div>
+        </div> 
+    </section>
+
+    <!------------------------------------------ Footer ---------------------------------------------------------------------------------->
+
+    <footer id="contato" class="bg-[#9C1B2E] text-gray-200 py-10 w-full h-full">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col items-center gap-6">
+
+            <!-- TEXTO -->
+            <div class="text-center">
+                <h1 class="text-xl font-semibold mb-2">
+                    Meninas.comp - Projeto meninas na Computação
+                </h1>
+                <h2 class="text-lg">
+                    Departamento de Ciência da Computação, Campus Universitário Darcy Ribeiro, Brasília-DF
+                </h2>
+            </div>
+
+            <!-- REDES SOCIAIS -->
+            <div class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-7 gap-4 justify-items-center">
+
+                <a href="https://www.facebook.com/meninas.comp" class="flex items-center justify-center p-2 rounded-full hover:bg-[#9C1B2E]/20 transition transform hover:scale-110">
+                    <img src="assets/redes/face.png" alt="Facebook" class="w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14">
+                </a>
+
+                <a href="https://github.com/meninas-comp-UnB" class="flex items-center justify-center p-2 rounded-full hover:bg-[#9C1B2E]/20 transition transform hover:scale-110">
+                    <img src="assets/redes/github.png" alt="Github" class="w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14">
+                </a>
+
+                <a href="https://www.instagram.com/meninas.comp/?hl=pt-br" class="flex items-center justify-center p-2 rounded-full hover:bg-[#9C1B2E]/20 transition transform hover:scale-110">
+                    <img src="assets/redes/insta.png" alt="Instagram" class="w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14">
+                </a>
+
+                <a href="https://www.linkedin.com/company/meninas-comp/about/" class="flex items-center justify-center p-2 rounded-full hover:bg-[#9C1B2E]/20 transition transform hover:scale-110">
+                    <img src="assets/redes/linkedin.png" alt="Linkedin" class="w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14">
+                </a>
+
+                <a href="https://www.tiktok.com/@meninas.comp?lang=pt_BR" class="flex items-center justify-center p-2 rounded-full hover:bg-[#9C1B2E]/20 transition transform hover:scale-110">
+                    <img src="assets/redes/tktk.png" alt="Tiktok" class="w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14">
+                </a>
+
+                <a href="https://x.com/MeninasComp" class="flex items-center justify-center p-2 rounded-full hover:bg-[#9C1B2E]/20 transition transform hover:scale-110">
+                    <img src="assets/redes/x.png" alt="X" class="w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14">
+                </a>
+
+                <a href="https://www.youtube.com/channel/UCmhONbQH7ScTbK1zyDaso1A" class="flex items-center justify-center p-2 rounded-full hover:bg-[#9C1B2E]/20 transition transform hover:scale-110">
+                    <img src="assets/redes/youtube-play.png" alt="Youtube" class="w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14">
+                </a>
+            </div>
+
+        </div>
+
+        <hr class="border-white my-8 mx-auto max-w-7xl" />
+        
+        <div class="text-center text-sm text-white/80 px-6">
+            © 2026 <span class="font-medium">Meninas.comp</span>. All rights reserved.  
+            <br class="md:hidden">
+            Designed and developed by 
+            <a href="https://www.linkedin.com/in/anabraz26" target="_blank" 
+            class="underline hover:text-purple-400 font-semibold">
+            Ana Caroline.
+            </a>
+        </div>
+    </footer>
+    
+    <script>
+        const toggle = document.querySelector(".menu-toggle");
+        const menu = document.querySelector(".menu-list");
+
+        toggle.addEventListener("click", () => {
+            menu.classList.toggle("hidden");
+        });
+    </script>
+    
+</body>
+</html>
