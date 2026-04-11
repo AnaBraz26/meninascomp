@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html class="h-full" lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="bg-gradient-to-b bg-[#FFE7E8] flex flex-col antialiased overflow-x-hidden w-full">
+<body class="bg-[#FFE7E8] flex flex-col antialiased overflow-x-hidden w-full min-h-screen">
     
     <!------------------------------------------ Barra ---------------------------------------------------------------------------------->
 
@@ -44,6 +44,63 @@
             class="w-50 :w-1/2 transition-transform duration-500 hover:scale-110">
     </section>
 
+        <!---------------- ùltimas Noticias --------------------->
+    <section id="noticias" class="bg-[#FFE7E8] py-16 px-6 md:px-20">
+
+        <!-- TÍTULO COM DESTAQUE -->
+        <h2 class="text-4xl md:text-5xl mb-12 text-center font-extrabold text-[#9C1B2E] tracking-tight">
+            Últimas Notícias
+        </h2>
+
+        <!-- CARROSSEL -->
+        <div class="relative max-w-5xl mx-auto">
+
+            <div id="carousel-noticias"
+                class="flex flex-col md:flex-row items-center gap-6 md:gap-10 bg-white p-6 md:p-10 rounded-2xl shadow-xl border-l-8 border-[#9C1B2E] transition hover:scale-[1.01]">
+
+                <!-- IMAGEM -->
+                <div class="relative">
+                    <img id="img-noticia" class="w-40 md:w-60 aspect-square object-cover border-4 border-[#FFE7E8] shadow-md">
+
+                    <!-- BADGE -->
+                    <span
+                        class="absolute -top-2 -right-2 bg-[#9C1B2E] text-white text-xs px-3 py-1 rounded-full shadow">
+                        NOVO
+                    </span>
+                </div>
+
+                <!-- TEXTO -->
+                <div class="flex flex-col text-center md:text-left">
+
+                    <!-- DATA -->
+                    <p id="data-noticia" class="text-sm text-gray-500 mb-1"></p>
+
+                    <!-- MANCHETE -->
+                    <h3 id="subtitle-noticia" class="text-[#9C1B2E] font-extrabold text-xl md:text-2xl leading-snug"></h3>
+
+                    <!-- TEXTO -->
+                    <p id="text-noticia" class="text-gray-700 text-base md:text-lg leading-relaxed mt-3 text-justify"></p>
+
+                    <!-- CTA -->
+                    <button id="btn-noticia" class="mt-4 self-center md:self-start bg-[#9C1B2E] text-white px-5 py-2 rounded-lg hover:bg-[#7a1423] transition"> </button>
+
+                </div>
+            </div>
+
+            <!-- BOTÕES -->
+            <button onclick="noticiasCarousel.prev()"
+                class="absolute left-2 md:left-[-25px] top-1/2 -translate-y-1/2 bg-[#e79aa3] hover:bg-[#9C1B2E] text-white w-10 h-10 rounded-full shadow-md transition">
+                ❮
+            </button>
+
+            <button onclick="noticiasCarousel.next()"
+                class="absolute right-2 md:right-[-25px] top-1/2 -translate-y-1/2 bg-[#e79aa3] hover:bg-[#9C1B2E] text-white w-10 h-10 rounded-full shadow-md transition">
+                ❯
+            </button>
+
+        </div>
+    </section>
+
     <!------------------------------------------ Sobre ---------------------------------------------------------------------------------->
 
     <section id="sobre" class="relative bg-cover bg-center">
@@ -61,34 +118,34 @@
 
     <!------------------------------------------ Ame Bit Byte ---------------------------------------------------------------------------------->
 
-        <section id="sobre" class="relative bg-cover bg-center">
-            <div class="max-w-7xl mx-auto px-6 md:px-10 lg:px-16 mx-auto grid md:grid-cols-1 items-center mt-10">  
-                <div class="container grid md:grid-cols-2 items-center ">          
-                    <div>
-                        <h2 style="color: #9C1B2E" class="text-4xl text-center md:text-left md:text-5xl font-semibold text-[#673FBC]">
-                            <strong>Ame Bit Byte</strong>
-                        </h2>  
-        
-                        <p class="text-lg md:text-xl text-justify mt-6">
-                            A Ame Bit Byte recebeu esse nome em homenagem às incríveis professoras 
-                            Aleteia, Maristela e Maria Emília, da Universidade de Brasília. <br>
-                            Ela representa o projeto de extensão "Meninas.comp - computação também é coisa de Menina", 
-                            apoiado pela FAP-DF e promovido pelas professoras que inspiram meu nome.
-                        </p>
+    <section id="sobre" class="relative bg-cover bg-center">
+        <div class="max-w-7xl mx-auto px-6 md:px-10 lg:px-16 mx-auto grid md:grid-cols-1 items-center mt-10">  
+            <div class="container grid md:grid-cols-2 items-center ">          
+                <div>
+                    <h2 style="color: #9C1B2E" class="text-4xl text-center md:text-left md:text-5xl font-semibold text-[#673FBC]">
+                        <strong>Ame Bit Byte</strong>
+                    </h2>  
+    
+                    <p class="text-lg md:text-xl text-justify mt-6">
+                        A Ame Bit Byte recebeu esse nome em homenagem às incríveis professoras 
+                        Aleteia, Maristela e Maria Emília, da Universidade de Brasília. <br>
+                        Ela representa o projeto de extensão "Meninas.comp - computação também é coisa de Menina", 
+                        apoiado pela FAP-DF e promovido pelas professoras que inspiram meu nome.
+                    </p>
 
-                        <!-- <div class="flex justify-center mt-10 mb-5">
-                            <button class="bg-[#9C1B2E] hover:bg-[#e79aa3] text-xl text-white font-bold px-10 py-6 md:px-12 md:py-8 rounded-lg transition">
-                                Conheça mais sobre as mascotes
-                            </button>
-                        </div>   -->
-                    </div>
+                    <!-- <div class="flex justify-center mt-10 mb-5">
+                        <button class="bg-[#9C1B2E] hover:bg-[#e79aa3] text-xl text-white font-bold px-10 py-6 md:px-12 md:py-8 rounded-lg transition">
+                            Conheça mais sobre as mascotes
+                        </button>
+                    </div>   -->
+                </div>
 
-                    <div class="flex justify-center">
-                        <img src="assets/AME_V1.png" alt="Ame Bit Byte" class="w-72 md:w-[400px] lg:w-[350px]">
-                    </div>
+                <div class="flex justify-center">
+                    <img src="assets/AME_V1.png" alt="Ame Bit Byte" class="w-72 md:w-[400px] lg:w-[350px]">
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
     <!------------------------------------------ Fundadoras ---------------------------------------------------------------------------------->
 
@@ -104,7 +161,7 @@
             </p>        
         </div>
 
-        <div class="flex justify-center gap-16 mt-10 flex-wrap">
+        <div class="grid grid-cols-3 text-center justify-center mt-10 flex-wrap">
 
             <!-- Aleteia -->
             <a href="https://lattes.cnpq.br/1566076687226024"
@@ -112,7 +169,7 @@
                 
                 <img src="assets/Professoras/Aleteia.png"
                     alt="Aleteia"
-                    class="w-24 h-24 md:h-60 md:w-60 rounded-full object-cover shadow-md" />
+                    class="w-48 md:h-60 md:w-60 rounded-full object-cover shadow-md" />
                 
                 <span class="mt-3 text-xl font-medium text-[#9C1B2E]">
                     <strong> Aleteia Araujo </strong> 
@@ -125,7 +182,7 @@
                 
                 <img src="assets/Professoras/maristela.png"
                     alt="Maristela"
-                    class="w-24 h-24 md:h-60 md:w-60 rounded-full object-cover shadow-md" />
+                    class="w-48 md:h-60 md:w-60 rounded-full object-cover shadow-md" />
                 
                 <span class="mt-3 text-xl font-medium text-[#9C1B2E]">
                     <strong>Maristela Holanda</strong>
@@ -138,7 +195,7 @@
                 
                 <img src="assets/Professoras/Maria Emilia.png"
                     alt="Maria Emilia"
-                    class="w-24 h-24 md:h-60 md:w-60 rounded-full object-cover shadow-md" />
+                    class="w-48 md:h-60 md:w-60 rounded-full object-cover shadow-md" />
                 
                 <span class="mt-3 text-xl font-medium text-[#9C1B2E]">
                     <strong>Maria Emília Walter</strong>
@@ -149,51 +206,45 @@
     </section>
 
     <!---------------- Impactos --------------------->
-<section id="impactos" class="bg-[#FFE7E8] py-16 px-6 mt-10 md:px-20">
+    <section id="impactos" class="bg-[#FFE7E8] py-16 px-6 mt-10 md:px-20">
 
-    <h2 class="text-3xl md:text-5xl mb-10 text-center font-bold text-[#9C1B2E]">
-        Impactos do Projeto
-    </h2>
+        <h2 class="text-3xl md:text-5xl mb-10 text-center font-bold text-[#9C1B2E]">
+            Impactos do Projeto
+        </h2>
 
-    <!-- CARROSSEL -->
-    <div class="relative max-w-5xl mx-auto">
+        <!-- CARROSSEL -->
+        <div class="relative max-w-5xl mx-auto">
 
-        <div id="carousel" class="flex flex-col md:flex-row items-center gap-6 md:gap-10 bg-white p-6 md:p-10 rounded-xl shadow-lg">
+            <div id="carousel" class="flex flex-col md:flex-row items-center gap-6 md:gap-10 bg-white p-6 md:p-10 rounded-xl shadow-lg">
 
-            <!-- IMAGEM -->
-            <img id="img" src="assets/Depoimentos/Kailany.jpeg"
-                class="w-32 h-32 md:w-48 md:h-48 rounded-full object-cover flex-shrink-0">
+                <!-- IMAGEM -->
+                <img id="img-impacto" class="w-32 h-32 md:w-48 md:h-48 rounded-full object-cover flex-shrink-0">
 
-            <!-- BLOCO DE TEXTO -->
-            <div class="flex flex-col text-center md:text-left">
+                <!-- BLOCO DE TEXTO -->
+                <div class="flex flex-col text-center md:text-left">
+                    <!-- SUBTÍTULO -->
+                    <p id="subtitle-impacto" class="text-[#9C1B2E] font-bold text-lg md:text-xl"></p>
 
-                <!-- SUBTÍTULO -->
-                <p id="subtitle" class="text-[#9C1B2E] font-bold text-lg md:text-xl">
-                    Kailany Rocha - Pós-graduanda da UnB
-                </p>
+                    <!-- TEXTO PRINCIPAL -->
+                    <p id="text-impacto" class="text-gray-700 text-base md:text-lg leading-relaxed mt-2 text-justify"></p>
 
-                <!-- TEXTO PRINCIPAL -->
-                <p id="text" class="text-gray-700 text-base md:text-lg leading-relaxed mt-2 text-justify">
-                    Participo do Meninas.comp desde 2014, embora hoje atue mais pontualmente em eventos e mesas-redondas. Comecei no projeto ainda na escola e ele foi um divisor de águas na minha carreira, pois foi ali que conheci a área de computação. Atualmente, sou formada em Ciência da Computação pela UnB, estou finalizando o mestrado na mesma instituição e trabalho na área de dados.
-                </p>
-
+                </div>
             </div>
+
+            <!-- BOTÃO ESQUERDA -->
+            <button onclick="impactosCarousel.prev()"
+                class="absolute left-2 md:left-[-20px] top-1/2 -translate-y-1/2 bg-[#e79aa3] text-white w-8 h-8 md:w-10 md:h-10 rounded-full">
+                ❮
+            </button>
+
+            <!-- BOTÃO DIREITA -->
+            <button onclick="impactosCarousel.next()"
+                class="absolute right-2 md:right-[-20px] top-1/2 -translate-y-1/2 bg-[#e79aa3] text-white w-8 h-8 md:w-10 md:h-10 rounded-full">
+                ❯
+            </button>
+
         </div>
-
-        <!-- BOTÃO ESQUERDA -->
-        <button onclick="prevSlide()"
-            class="absolute left-2 md:left-[-20px] top-1/2 -translate-y-1/2 bg-[#e79aa3] text-white w-8 h-8 md:w-10 md:h-10 rounded-full">
-            ❮
-        </button>
-
-        <!-- BOTÃO DIREITA -->
-        <button onclick="nextSlide()"
-            class="absolute right-2 md:right-[-20px] top-1/2 -translate-y-1/2 bg-[#e79aa3] text-white w-8 h-8 md:w-10 md:h-10 rounded-full">
-            ❯
-        </button>
-
-    </div>
-</section>
+    </section>
     <!------------------------------------------ Apoiadores ---------------------------------------------------------------------------------->
 
     <section id="apoiadores" class="px-4 sm:px-6 lg:px-8">
@@ -203,51 +254,51 @@
             </h2>
             
             <!-- Primeira linha de apoio -->
-            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-7 gap-6 place-items-center w-full">
+            <div class="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-7 gap-6 place-items-center w-full">
                 <a href="https://grupomulheresdobrasil.org.br/nucleos/brasilia/"
-                class="flex justify-center items-center w-80 h-40 transition-transform hover:scale-105">
+                class="flex justify-center items-center md:w-80 md:h-40 w-60 h-30 transition-transform hover:scale-105">
                     <img src="assets/apoio/mulheres.png"
                         alt="Mulheres do Brasil"
                         class="max-w-full max-h-full object-contain" />
                 </a>
 
                 <a href="https://www.gov.br/capes/pt-br"
-                class="flex justify-center items-center w-80 h-24 transition-transform hover:scale-105">
+                class="flex justify-center items-center md:w-80 md:h-24 w-24 h-24 transition-transform hover:scale-105">
                     <img src="assets/apoio/capes.png"
                         alt="CAPES"
                         class="max-w-full max-h-full object-contain" />
                 </a>
 
                 <a href="https://www.gov.br/cnpq/pt-br"
-                class="flex justify-center items-center w-80 h-20 transition-transform hover:scale-105">
+                class="flex justify-center items-center md:w-80 md:h-20 w-24 h-24 transition-transform hover:scale-105">
                     <img src="assets/apoio/cnpq.png"
                         alt="CNPQ"
                         class="max-w-full max-h-full object-contain" />
                 </a>
 
                 <a href="https://www.fap.df.gov.br/"
-                class="flex justify-center items-center w-80 h-36 transition-transform hover:scale-105">
+                class="flex justify-center items-center md:w-80 md:h-36 w-48 h-24 transition-transform hover:scale-105">
                     <img src="assets/apoio/fap.png"
                         alt="FAPDF"
                         class="max-w-full max-h-full object-contain" />
                 </a>
 
                 <a href="https://www.sbc.org.br/"
-                class="flex justify-center items-center w-80 h-32 transition-transform hover:scale-105">
+                class="flex justify-center items-center md:w-80 md:h-32 w-30 h-20 transition-transform hover:scale-105">
                     <img src="assets/apoio/sbc].png"
                         alt="SBC"
                         class="max-w-full max-h-full object-contain" />
                 </a>
 
                 <a href="https://meninas.sbc.org.br/"
-                class="flex justify-center items-center w-48 h-20 transition-transform hover:scale-105">
+                class="flex justify-center items-center md:w-48 md:h-20 w-24 h-14 transition-transform hover:scale-105">
                     <img src="assets/apoio/digitais.png"
                         alt="Meninas digitais"
                         class="max-w-full max-h-full object-contain" />
                 </a>
 
                 <a href="https://www.unb.br/"
-                class="flex justify-center items-center w-80 h-32 transition-transform hover:scale-105">
+                class="flex justify-center items-center md:w-80 md:h-32 w-24 h-30 transition-transform hover:scale-105">
                     <img src="assets/apoio/unb-logo.webp"
                         alt="UNB"
                         class="max-w-full max-h-full object-contain" />
@@ -340,42 +391,88 @@
     </script>
 
     <script>
-        const slides = [
+        const noticias = [
+            {
+                data: "2026 • Evento",
+                img: "assets/noticia/calourada.jpeg",
+                subtitle: "Calourada Meninas.comp 2026.1",
+                text: `Calouras da computação de 2025/2 e 2026/1, vocês são nossas convidadas para um encontro especial de acolhimento e conexão!
+                        Venham conhecer outras meninas, ouvir histórias inspiradoras e aproveitar um momento leve com coffee break e brindes`,
+                buttonText: "Mais Informações",
+                buttonLink: "https://forms.gle/7kB71RazUGQHfwaD9"
+            },
+        ];
+
+        const impactos = [
             {
                 img: "assets/Depoimentos/Kailany.jpeg",
                 subtitle: "Kailany Rocha - Pós-graduanda da UnB",
                 text: "Participo do Meninas.comp desde 2014, embora hoje atue mais pontualmente em eventos e mesas-redondas. Comecei no projeto ainda na escola e ele foi um divisor de águas na minha carreira, pois foi ali que conheci a área de computação. Atualmente, sou formada em Ciência da Computação pela UnB, estou finalizando o mestrado na mesma instituição e trabalho na área de dados."
             },
-                        {
+            {
                 img: "assets/Depoimentos/Vania.jpeg",
                 subtitle: "Vânia Lúcia - Professora do Cemi 310",
-                text: "Participo do projeto há cerca de 8 anos e atuo diretamento com as alunas no projeto.O Meninas.comp tem grande impacto na minha vida e na escola, pois promove um ambiente acolhedor para meninas na computação, com atividades de robótica e programação. Além disso, incentiva a formação de meninas cientistas que desenvolvem projetos, inclusive voltados para alunos com deficiência. Para as alunas, é uma oportunidade de representatividade e protagonismo na área. "
+                text: "Participo do projeto há cerca de 8 anos e atuo diretamento com as alunas no projeto. O Meninas.comp tem grande impacto na minha vida e na escola, pois promove um ambiente acolhedor para meninas na computação, com atividades de robótica e programação. Além disso, incentiva a formação de meninas cientistas que desenvolvem projetos, inclusive voltados para alunos com deficiência. Para as alunas, é uma oportunidade de representatividade e protagonismo na área. "
             }
         ];
 
-        let index = 0;
+        const noticiasCarousel = createCarousel(noticias, {
+            data: "data-noticia",
+            img: "img-noticia",
+            subtitle: "subtitle-noticia",
+            text: "text-noticia",
+            button: "btn-noticia"
+        });
 
-        function showSlide(i) {
-            document.getElementById("img").src = slides[i].img;
-            document.getElementById("subtitle").innerText = slides[i].subtitle;
-            document.getElementById("text").innerText = slides[i].text;
-        }
+        const impactosCarousel = createCarousel(impactos, {
+            img: "img-impacto",
+            subtitle: "subtitle-impacto",
+            text: "text-impacto"
+        });
 
-        function nextSlide() {
-            index = (index + 1) % slides.length;
+        function createCarousel(slides, ids) {
+            let index = 0;
+
+            function showSlide(i) {
+                document.getElementById(ids.img).src = slides[i].img;
+                document.getElementById(ids.subtitle).innerText = slides[i].subtitle;
+                document.getElementById(ids.text).innerText = slides[i].text;
+                
+                if (ids.data) {
+                    document.getElementById(ids.data).innerText = slides[i].data;
+                }
+
+                if (ids.button) {
+                    const btn = document.getElementById(ids.button);
+
+                    if (slides[i].buttonText) {
+                        btn.innerText = slides[i].buttonText;
+                        btn.href = slides[i].buttonLink;
+                        btn.style.display = "inline-block";
+                    } else {
+                        btn.style.display = "none";
+                    }
+                }
+            }
+
+            function next() {
+                console.log("mudando slide", ids.img);
+                index = (index + 1) % slides.length;
+                showSlide(index);
+            }
+
+            function prev() {
+                index = (index - 1 + slides.length) % slides.length;
+                showSlide(index);
+            }
+
             showSlide(index);
-        }
+            setInterval(next, 20000);
 
-        function prevSlide() {
-            index = (index - 1 + slides.length) % slides.length;
-            showSlide(index);
+            return { next, prev };
         }
+    </script> 
 
-        setInterval(() => {
-            nextSlide();
-        }, 20000);
-    </script>
-        
     </body>
 
 </html>
